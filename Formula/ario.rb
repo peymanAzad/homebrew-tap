@@ -1,20 +1,20 @@
 class Ario < Formula
   desc "A batteries-included terminal download manager powered by aria2"
   homepage "https://github.com/peymanAzad/ario"
-  version "0.1.0"
+  version "0.1.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/peymanAzad/ario/releases/download/v0.1.0/ario-aarch64-apple-darwin.tar.gz"
-      sha256 "dfe6896308f6b9fbd998c09cbd1606ca9147e3b24b742615f10ab754819fb30e"
+      url "https://github.com/peymanAzad/ario/releases/download/v0.1.2/ario-aarch64-apple-darwin.tar.gz"
+      sha256 "7156287530ec450f6a84a1dc02615cb61113865df13cdf1c31aa9c5c96aa4333"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/peymanAzad/ario/releases/download/v0.1.0/ario-x86_64-apple-darwin.tar.gz"
-      sha256 "5a43c064e16e20eb67ddcf097b3662b69d98d17c5331f6a732ded07a5c3f9915"
+      url "https://github.com/peymanAzad/ario/releases/download/v0.1.2/ario-x86_64-apple-darwin.tar.gz"
+      sha256 "b07777ee4b93151659dde94df3c37ce8abd11e8aeee7bd190f80fcd3b352da6a"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/peymanAzad/ario/releases/download/v0.1.0/ario-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "88d6a4fc250b5cc0aedfb8ec40bf439f2b31ac1c7bc92f21a6860f4c94e81e99"
+    url "https://github.com/peymanAzad/ario/releases/download/v0.1.2/ario-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "f4ca54962e00ff7df416bf9f228208e862624e3d8466cb182f236f0d69a259d7"
   end
   license "MIT"
   depends_on "aria2"
